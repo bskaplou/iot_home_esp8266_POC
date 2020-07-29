@@ -122,7 +122,7 @@ async function setup_ssid(ssid) {
       signale.success(`${net.ssid} device discovered on address=>${host_desc.addresses}, port=>${host_desc.port}`)
 
       signale.time("update_settings")
-      const result = await update_settings(host_desc.addresses[0], host_desc.port, "bskaplou@dybenko_2.4", "kerakera", "1234123412341232")
+      const result = await update_settings(host_desc.addresses[0], host_desc.port, "bskaplou@dybenko_2.4", "somepass", "1234123412341232")
       signale.timeEnd("update_settings")
 
       signale.time("disconnect")
