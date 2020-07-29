@@ -1,4 +1,4 @@
-==ulisp/ Firmware==
+## ulisp/ Firmware
 
 main.ino is entry point
 ulisp.ino forked from https://github.com/technoblogy/ulisp-esp
@@ -6,12 +6,12 @@ ulisp.ino forked from https://github.com/technoblogy/ulisp-esp
 build it with build/build.sh
 upload it with build/upload.sh
 
-==build/ build scripts==
+## build/ build scripts
 
 install arduino-cli
 edit build/settings 
 
-==libraries/ Arduino libs==
+## libraries/ Arduino libs
 
 $ ls libraries/
 AESLib				ArduinoJson			MD_Parola-master
