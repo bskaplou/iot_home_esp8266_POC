@@ -1,0 +1,3 @@
+nodemcu-uploader>=0.4.3
+pycryptodomex>=3.9.7
+esptool>=2.8

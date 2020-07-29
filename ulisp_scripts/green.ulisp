@@ -1,0 +1,26 @@
+# python tools/client.py --ip 192.168.2.174 --mfile ulisp_scripts/green.ulisp --key YOUR_KEY
+
+(defun round00 (x) 
+  (/ (round (* x 100)) 100)
+)
+
+(defun show_sensor (x)
+  (show 
+    (format nil "CO2=~a TVOC=~a Temp=~aC Humi=~a%" 
+      (first x)
+      (second x)
+      (round00 (nth 2 x))
+      (round00 (nth 3 x))
+    )
+    30000
+  )
+)
+
+(periodic 40000 
+  (quote
+    (request "192.168.2.99" 54321
+      (quote (list (co2-read) (tvoc-read) (temperature-read) (humidity-read)))
+      'show_sensor
+    )
+  )
+)

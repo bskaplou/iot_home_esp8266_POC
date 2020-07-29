@@ -1,0 +1,9 @@
+BAUD=115200
+BOARD=esp8266:esp8266:generic:xtal=160,baud=$BAUD
+SKETCH=ulisp
+#PORT=/dev/tty.SLAB_USBtoUART
+#PORT=/dev/tty.usbserial
+#PORT=/dev/tty.usbserial-143220
+#PORT=/dev/tty.usbserial-143230
+PORT=/dev/tty.usbserial-143440
+#PORT=/dev/tty.usbserial-143310

@@ -1,0 +1,10 @@
+{
+  "name": "hhg",
+  "version": "0.0.1",
+  "dependencies": {
+    "node-wifi": "^2.0.12",
+    "signale": "^1.4.0",
+    "yargs": "^15.3.1",
+    "bonjour": "^3.5.0"
+  }
+}
